@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripShapers - Your Gateway to Memorable Journeys</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="tslogo.png" alt="TripShapers Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-plane"></i> FLIGHT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-hotel"></i> HOTEL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-umbrella-beach"></i> HOLIDAYS</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-dark me-2">MY TRIP</a>
+                    <a href="#" class="btn btn-outline-dark me-2">SUPPORT</a>
+                    <a href="#" class="btn btn-danger">LOGIN OR CREATE ACCOUNT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section position-relative">
+        <div class="hero-carousel">
+            <!-- Will be populated by JavaScript -->
+        </div>
+        <div class="search-container position-absolute start-50 translate-middle-x" style="bottom: 30%;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="position-relative w-100">
+                            <input type="text" class="form-control" id="packageSearch" placeholder="Where would you like to go?" autocomplete="off">
+                            <div class="search-dropdown" id="searchDropdown"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+            <div class="container">
+                <h2 class="text-center">WHY CHOOSE US</h2>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-item">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h4>Best Price Guarantee</h4>
+                            <p>We offer you the best price in the industry, now you don't need to refer somewhere else for a better pricing option because we have, your one stop travel solution point.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-item">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Trust & Safety</h4>
+                            <p>Your safety is our Responsibility & that's what make your trustworthy travel partner since years.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-item">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h4>Guided Experiences</h4>
+                            <p>Our well experienced dedicated team of management provides you with the flawless travel packages. We ensure that you travel without worry!!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-item">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                            <h4>Customer Delight</h4>
+                            <p>Our Reviews speak for themselves; making us work continuously dedicated in your services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+    <!-- Featured Packages Section -->
+    <section class="featured-packages py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Packages</h2>
+            <div class="row g-4" id="featuredPackages">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Phone: +971 54 582 3322</p>
+                    <p>Email: info@tripshapersarabia.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
