@@ -39,6 +39,38 @@ const packages = {
         description: 'Explore the timeless beauty of the desert',
         image: 'images/desert.jpg',
         link: 'packages/desert-safari.html'
+    },
+    'Mussandam Dibba': {
+        title: 'Mussandam Dibba Tour',
+        price: 'AED 250',
+        duration: 'Full Day',
+        description: 'Experience the fjords of Arabia with stunning mountain and sea views',
+        image: 'images/mussandam.jpg',
+        link: 'packages/mussandam-dibba.html'
+    },
+    'Dubai City Tour': {
+        title: 'Dubai City Tour',
+        price: 'AED 150',
+        duration: 'Half Day',
+        description: 'Explore the highlights of Dubai including Burj Khalifa and Dubai Mall',
+        image: 'images/dubai-city.jpg',
+        link: 'packages/dubai-city-tour.html'
+    },
+    'Abu Dhabi Tour': {
+        title: 'Abu Dhabi City Tour',
+        price: 'AED 200',
+        duration: 'Full Day',
+        description: 'Visit the Grand Mosque, Emirates Palace, and other iconic landmarks',
+        image: 'images/abu-dhabi.jpg',
+        link: 'packages/abu-dhabi-tour.html'
+    },
+    'F1 Grand Prix': {
+        title: 'F1 Abu Dhabi Grand Prix',
+        price: 'Contact for Price',
+        duration: '3 Days',
+        description: 'Experience the thrill of Formula 1 at Yas Marina Circuit',
+        image: 'images/f1.jpg',
+        link: 'packages/f1-grand-prix.html'
     }
 };
 
