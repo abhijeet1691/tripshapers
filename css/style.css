@@ -280,6 +280,46 @@ body {
     text-align: center;
 }
 
+/* Floating Call Button */
+.floating-call-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    animation: vibrate 1.5s infinite;
+}
+
+.floating-call-btn:hover {
+    background-color: #128C7E;
+    color: white;
+    transform: scale(1.1);
+    animation: none;
+}
+
+.floating-call-btn i {
+    font-size: 24px;
+}
+
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
 /* Footer */
 footer {
     margin-top: auto;
