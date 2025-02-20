@@ -9,7 +9,7 @@ body {
 }
 
 .nav-link {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 /* Hero Section */
@@ -283,7 +283,7 @@ body {
 /* Floating Call Button */
 .floating-call-btn {
     position: fixed;
-    bottom: 30px;
+    bottom: 80px;
     right: 30px;
     width: 60px;
     height: 60px;
@@ -300,11 +300,28 @@ body {
     animation: vibrate 1.5s infinite;
 }
 
+.floating-call-btn::before {
+    content: "WhatsApp";
+    position: absolute;
+    bottom: -35px;
+    right: -10px;
+    background-color: #25D366;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
 .floating-call-btn:hover {
     background-color: #128C7E;
     color: white;
     transform: scale(1.1);
     animation: none;
+}
+
+.floating-call-btn:hover::before {
+    background-color: #128C7E;
 }
 
 .floating-call-btn i {

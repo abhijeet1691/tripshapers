@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripShapers - Hotel Booking</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .coming-soon {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #343a40;
+            margin-top: 56px;
+        }
+        .coming-soon h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        .coming-soon p {
+            font-size: 1.5rem;
+            opacity: 0.8;
+        }
+        .icon-container {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="tslogo.png" alt="TripShapers Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="flight.html"><i class="fas fa-plane"></i> FLIGHT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="hotel.html"><i class="fas fa-hotel"></i> HOTEL</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-umbrella-beach"></i> HOLIDAYS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="packages/malaysia.html">Malaysia</a></li>
+                            <li><a class="dropdown-item" href="packages/georgia.html">Georgia</a></li>
+                            <li><a class="dropdown-item" href="packages/singapore.html">Singapore</a></li>
+                            <li><a class="dropdown-item" href="packages/baku.html">Baku</a></li>
+                            <li><a class="dropdown-item" href="packages/desert-safari.html">Desert Safari</a></li>
+                            <li><a class="dropdown-item" href="packages/mussandam-dibba.html">Mussandam Dibba</a></li>
+                            <li><a class="dropdown-item" href="packages/dubai-city-tour.html">Dubai City Tour</a></li>
+                            <li><a class="dropdown-item" href="packages/abu-dhabi-tour.html">Abu Dhabi Tour</a></li>
+                            <li><a class="dropdown-item" href="packages/f1-grand-prix.html">F1 Grand Prix</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="https://wa.me/+971545823322?text=Hi. I need some help regarding your services." class="btn btn-outline-dark me-2">SUPPORT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Coming Soon Section -->
+    <div class="coming-soon">
+        <div class="container">
+            <div class="icon-container">
+                <i class="fas fa-hotel"></i>
+            </div>
+            <h1>Hotel Booking Coming Soon</h1>
+            <p>We're working on bringing you the best hotel accommodations. Stay tuned!</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3 mt-auto">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="contact-info">
+                    <span class="me-3"><i class="fas fa-phone"></i> +971 54 582 3322</span>
+                    <span><i class="fas fa-envelope"></i> info@tripshapers.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
