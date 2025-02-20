@@ -30,8 +30,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fas fa-hotel"></i> HOTEL</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-umbrella-beach"></i> HOLIDAYS</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-umbrella-beach"></i> HOLIDAYS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="packages/malaysia.html">Malaysia</a></li>
+                            <li><a class="dropdown-item" href="packages/georgia.html">Georgia</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="packages/singapore.html">Singapore</a></li>
+                            <li><a class="dropdown-item" href="packages/baku.html">Baku</a></li>
+                            <li><a class="dropdown-item" href="packages/desert-safari.html">Desert Safari</a></li>
+                            <li><a class="dropdown-item" href="packages/mussandam-dibba.html">Mussandam Dibba</a></li>
+                            <li><a class="dropdown-item" href="packages/dubai-city-tour.html">Dubai City Tour</a></li>
+                            <li><a class="dropdown-item" href="packages/abu-dhabi-tour.html">Abu Dhabi Tour</a></li>
+                            <li><a class="dropdown-item" href="packages/f1-grand-prix.html">F1 Grand Prix</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="d-flex">
@@ -54,7 +68,19 @@
                     <div class="col-12">
                         <div class="position-relative w-100">
                             <input type="text" class="form-control" id="packageSearch" placeholder="Where would you like to go?" autocomplete="off">
-                            <div class="search-dropdown" id="searchDropdown"></div>
+                            <div class="search-dropdown" id="searchDropdown">
+                                <div class="search-results" id="searchResults">
+                                    <a href="packages/singapore.html" class="search-item">Singapore</a>
+                                    <a href="packages/malaysia.html" class="search-item">Malaysia</a>
+                                    <a href="packages/georgia.html" class="search-item">Georgia</a>
+                                    <a href="packages/baku.html" class="search-item">Baku</a>
+                                    <a href="packages/desert-safari.html" class="search-item">Desert Safari</a>
+                                    <a href="packages/mussandam-dibba.html" class="search-item">Mussandam Dibba</a>
+                                    <a href="packages/dubai-city-tour.html" class="search-item">Dubai City Tour</a>
+                                    <a href="packages/abu-dhabi-tour.html" class="search-item">Abu Dhabi Tour</a>
+                                    <a href="packages/f1-grand-prix.html" class="search-item">F1 Grand Prix</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,9 +140,78 @@
     <!-- Featured Packages Section -->
     <section class="featured-packages py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Featured Packages</h2>
-            <div class="row g-4" id="featuredPackages">
-                <!-- Will be populated by JavaScript -->
+            <h2 class="text-center mb-4">Featured Holiday Packages</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/singapore.jpg" class="card-img-top" alt="Singapore Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Singapore</h5>
+                            <p class="card-text">Experience the magic of Singapore with our comprehensive tour package.</p>
+                            <a href="packages/singapore.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/malaysia.jpg" class="card-img-top" alt="Malaysia Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Malaysia</h5>
+                            <p class="card-text">Discover the beauty of Malaysia with our curated travel package.</p>
+                            <a href="packages/malaysia.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/georgia.jpg" class="card-img-top" alt="Georgia Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Georgia</h5>
+                            <p class="card-text">Explore the stunning landscapes of Georgia with our special tour.</p>
+                            <a href="packages/georgia.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/mussandam.jpg" class="card-img-top" alt="Mussandam Dibba">
+                        <div class="card-body">
+                            <h5 class="card-title">Mussandam Dibba</h5>
+                            <p class="card-text">Experience the stunning fjords of Oman with our day tour package.</p>
+                            <a href="packages/mussandam-dibba.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/dubai-tour.jpg" class="card-img-top" alt="Dubai City Tour">
+                        <div class="card-body">
+                            <h5 class="card-title">Dubai City Tour</h5>
+                            <p class="card-text">Explore Dubai with Big Bus, Yacht Dinner & Desert Safari.</p>
+                            <a href="packages/dubai-city-tour.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/abu-dhabi.jpg" class="card-img-top" alt="Abu Dhabi Tour">
+                        <div class="card-body">
+                            <h5 class="card-title">Abu Dhabi Tour</h5>
+                            <p class="card-text">Discover the majestic capital and hidden gems of the UAE.</p>
+                            <a href="packages/abu-dhabi-tour.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/f1.jpg" class="card-img-top" alt="F1 Grand Prix">
+                        <div class="card-body">
+                            <h5 class="card-title">F1 Grand Prix 2025</h5>
+                            <p class="card-text">Experience the thrill of Formula 1 racing this April 2025.</p>
+                            <a href="packages/f1-grand-prix.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -124,29 +219,17 @@
 
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-4">
+    <footer class="bg-dark text-light py-3">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Contact Us</h5>
-                    <p>Phone: +971 54 582 3322</p>
-                    <p>Email: info@tripshapersarabia.com</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="contact-info">
+                    <span class="me-3"><i class="fas fa-phone"></i> +971 54 582 3322</span>
+                    <span><i class="fas fa-envelope"></i> info@tripshapersarabia.com</span>
                 </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light">About Us</a></li>
-                        <li><a href="#" class="text-light">Terms & Conditions</a></li>
-                        <li><a href="#" class="text-light">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Follow Us</h5>
-                    <div class="social-links">
-                        <a href="#" class="text-light me-2"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
-                    </div>
+                <div class="quick-links">
+                    <a href="#" class="text-light text-decoration-none me-3">About Us</a>
+                    <a href="#" class="text-light text-decoration-none me-3">Terms & Conditions</a>
+                    <a href="#" class="text-light text-decoration-none">Privacy Policy</a>
                 </div>
             </div>
         </div>
