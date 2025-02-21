@@ -374,7 +374,7 @@ body {
 }
 
 .floating-call-btn::before {
-    content: "WhatsApp";
+    content: "Message Us";
     position: absolute;
     bottom: -35px;
     right: -10px;
@@ -412,13 +412,157 @@ body {
 
 /* Footer */
 footer {
-    margin-top: auto;
+    margin-top: 50px;
 }
 
 .social-links a {
     font-size: 1.5rem;
     margin-right: 1rem;
     text-decoration: none;
+}
+
+/* Activities Cards */
+.activity-card {
+    height: 100%;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.activity-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.activity-card .card-body {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.activity-card .card-text {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.activity-card .btn {
+    align-self: flex-start;
+}
+
+/* Activities Grid */
+.activities-section .row {
+    margin-bottom: -2rem;
+}
+
+.activities-section .col-md-4 {
+    margin-bottom: 2rem;
+}
+
+/* Modern List Styling */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    position: relative;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.5rem;
+    background: var(--light-color, #f8f9fa);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.feature-list li:hover {
+    transform: translateX(5px);
+    background: var(--light-color, #f8f9fa);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.feature-list li i {
+    margin-right: 1rem;
+    color: var(--primary-color, #FF385C);
+    font-size: 1.1rem;
+}
+
+/* Tour Details List */
+.tour-details {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.tour-details h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--dark-color, #1D1D1D);
+}
+
+.tour-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tour-details li {
+    padding: 1rem 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+
+.tour-details li:last-child {
+    border-bottom: none;
+}
+
+.tour-details li i {
+    margin-right: 1rem;
+    color: var(--primary-color, #FF385C);
+    font-size: 1.1rem;
+}
+
+/* Price Options List */
+.price-options {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.price-options li {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.price-options li:hover {
+    background-color: var(--light-color, #f8f9fa);
+}
+
+.price-options li:last-child {
+    border-bottom: none;
+}
+
+.price-options .price-tag {
+    font-weight: 600;
+    color: var(--primary-color, #FF385C);
 }
 
 /* Responsive Adjustments */
