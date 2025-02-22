@@ -22,15 +22,32 @@
     <style>
         .hero-section {
             height: 50vh;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/home.jpg');
+            background-image: url('images/home.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
             color: white;
             text-align: center;
         }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
         .package-card {
             transition: transform 0.3s ease;
             margin-bottom: 30px;
@@ -77,9 +94,11 @@
 
     <!-- Hero Section -->
     <div class="hero-section">
-        <div class="container">
-            <h1 class="display-4">Explore Our Holiday Packages</h1>
-            <p class="lead">Discover amazing destinations and create unforgettable memories</p>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="display-4">Explore Our Holiday Packages</h1>
+                <p class="lead">Discover amazing destinations and create unforgettable memories</p>
+            </div>
         </div>
     </div>
 
@@ -139,16 +158,19 @@
     </a>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-3">
+    <footer class="bg-dark text-light py-2">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <div class="contact-info">
-                    <span class="me-3"><i class="fas fa-phone"></i> +971 54 582 3322</span>
-                    <span><i class="fas fa-envelope"></i> info@tripshapersarabia.com</span>
+                <div class="copyright">
+                    &copy; 2024 TripShapers. All rights reserved.
                 </div>
-                <div class="quick-links">
-                    <a href="#" class="text-light text-decoration-none me-3">About</a>
-                    <a href="#" class="text-light text-decoration-none me-3">Terms</a>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/tripshapersarabia/" target="_blank" class="text-light me-3">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61572405011237" target="_blank" class="text-light">
+                        <i class="fab fa-facebook"></i>
+                    </a>
                 </div>
             </div>
         </div>

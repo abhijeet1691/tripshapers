@@ -52,41 +52,53 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero-section position-relative">
-        <div class="hero-carousel">
-            <!-- Will be populated by JavaScript -->
-        </div>
-        <div class="search-container position-absolute start-50 translate-middle-x" style="bottom: 30%;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="position-relative w-100">
-                            <input type="text" class="form-control" id="packageSearch" placeholder="Where would you like to go?" autocomplete="off">
-                            <div class="search-dropdown" id="searchDropdown">
-                                <div class="search-results" id="searchResults">
-                                    <a href="packages/singapore.html" class="search-item">Singapore</a>
-                                    <a href="packages/malaysia.html" class="search-item">Malaysia</a>
-                                    <a href="packages/georgia.html" class="search-item">Georgia</a>
-                                    <a href="packages/baku.html" class="search-item">Baku</a>
-                                    <a href="packages/desert-safari.html" class="search-item">Desert Safari</a>
-                                    <a href="packages/mussandam-dibba.html" class="search-item">Mussandam Dibba</a>
-                                    <a href="packages/dubai-city-tour.html" class="search-item">Dubai City Tour</a>
-                                    <a href="packages/abu-dhabi-tour.html" class="search-item">Abu Dhabi Tour</a>
-                                    <a href="packages/f1-grand-prix.html" class="search-item">F1 Grand Prix</a>
-                                </div>
-                            </div>
-                        </div>
+    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: url('images/singapore.jpg');">
+                    <div class="hero-content">
+                        <h1>Vibrant Singapore</h1>
+                        <p>Experience the magic of a modern metropolis</p>
+                        <a href="packages/singapore.html" class="btn btn-light btn-lg">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('images/malaysia.jpg');">
+                    <div class="hero-content">
+                        <h1>Enchanting Malaysia</h1>
+                        <p>Discover the beauty of diverse cultures</p>
+                        <a href="packages/malaysia.html" class="btn btn-light btn-lg">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('images/georgia.jpg');">
+                    <div class="hero-content">
+                        <h1>Majestic Georgia</h1>
+                        <p>Explore stunning landscapes and rich history</p>
+                        <a href="packages/georgia.html" class="btn btn-light btn-lg">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('images/dubai-tour.jpg');">
+                    <div class="hero-content">
+                        <h1>Luxurious Dubai</h1>
+                        <p>Experience luxury in the heart of Arabia</p>
+                        <a href="packages/dubai-city-tour.html" class="btn btn-light btn-lg">Explore Now</a>
                     </div>
                 </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
 
-
-
-
-
-        
     <!-- Featured Packages Section -->
     <section class="featured-packages py-5">
         <div class="container">
@@ -211,6 +223,134 @@
                 </div>
             </section>
 
+
+
+                <!-- Customer Reviews Section -->
+    <section class="reviews-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Travelers Say</h2>
+            
+            <div id="reviewsSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="review-card">
+                            <div class="review-content">
+                                <div class="reviewer-info">
+                                    <img src="images/reviewers/sarah.jpg" alt="Sarah Wilson" class="reviewer-img">
+                                    <div class="reviewer-details">
+                                        <h4>Dubai</h4>
+                                        <div class="stars">★★★★★</div>
+                                    </div>
+                                </div>
+                                <p class="review-text">"An incredible experience in Dubai! The desert safari was breathtaking, and the city tour was perfectly organized. Our guide made sure we didn't miss any highlights. Truly a memorable trip!"</p>
+                                <div class="reviewer-name">Sarah Wilson</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="review-card">
+                            <div class="review-content">
+                                <div class="reviewer-info">
+                                    <img src="images/reviewers/michael.jpg" alt="Michael Chen" class="reviewer-img">
+                                    <div class="reviewer-details">
+                                        <h4>Singapore</h4>
+                                        <div class="stars">★★★★★</div>
+                                    </div>
+                                </div>
+                                <p class="review-text">"Singapore exceeded all expectations! From Gardens by the Bay to the night safari, every moment was magical. The local food recommendations were spot on. Will definitely book again!"</p>
+                                <div class="reviewer-name">Michael Chen</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="review-card">
+                            <div class="review-content">
+                                <div class="reviewer-info">
+                                    <img src="images/reviewers/elena.jpg" alt="Elena Rodriguez" class="reviewer-img">
+                                    <div class="reviewer-details">
+                                        <h4>Georgia</h4>
+                                        <div class="stars">★★★★★</div>
+                                    </div>
+                                </div>
+                                <p class="review-text">"Georgia's rich history and stunning landscapes left me speechless. The wine tasting in Kakheti was a highlight. The local guides were knowledgeable and friendly. A perfect cultural experience!"</p>
+                                <div class="reviewer-name">Elena Rodriguez</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="review-card">
+                            <div class="review-content">
+                                <div class="reviewer-info">
+                                    <img src="images/reviewers/james.jpg" alt="James Thompson" class="reviewer-img">
+                                    <div class="reviewer-details">
+                                        <h4>Malaysia</h4>
+                                        <div class="stars">★★★★★</div>
+                                    </div>
+                                </div>
+                                <p class="review-text">"Malaysia was a perfect blend of culture and nature. The Petronas Towers were impressive, but the real gem was exploring Borneo's rainforests. Outstanding service from start to finish!"</p>
+                                <div class="reviewer-name">James Thompson</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="review-card">
+                            <div class="review-content">
+                                <div class="reviewer-info">
+                                    <img src="images/reviewers/lisa.jpg" alt="Lisa Anderson" class="reviewer-img">
+                                    <div class="reviewer-details">
+                                        <h4>Abu Dhabi</h4>
+                                        <div class="stars">★★★★★</div>
+                                    </div>
+                                </div>
+                                <p class="review-text">"The Grand Mosque was absolutely stunning! Every detail of our Abu Dhabi trip was perfectly planned. The Ferrari World experience was thrilling, and the hotel recommendations were excellent."</p>
+                                <div class="reviewer-name">Lisa Anderson</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewsSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewsSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-text">
+                    <h2>Ready to Start Your Journey?</h2>
+                    <p>Get in touch with us and let's plan your next adventure together</p>
+                </div>
+                
+                <div class="contact-buttons">
+                    <a href="https://wa.me/+971545823322?text=Hi.%20I%20need%20some%20help%20regarding%20your%20services." class="contact-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Chat on WhatsApp</span>
+                        <small>Quick Response</small>
+                    </a>
+                    
+                    <a href="mailto:info@tripshapers.com" class="contact-btn email-btn">
+                        <i class="far fa-envelope"></i>
+                        <span>Send us an Email</span>
+                        <small>24/7 Support</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Floating Call Button -->
     <a href="https://wa.me/+971545823322?text=Hi. I need some help regarding your services." id="floating-call" class="floating-call-btn">
         <i class="fab fa-whatsapp"></i>
@@ -219,16 +359,19 @@
 
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-3">
+    <footer class="bg-dark text-light py-2">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <div class="contact-info">
-                    <span class="me-3"><i class="fas fa-phone"></i> +971 54 582 3322</span>
-                    <span><i class="fas fa-envelope"></i> info@tripshapersarabia.com</span>
+                <div class="copyright">
+                    &copy; 2024 TripShapers. All rights reserved.
                 </div>
-                <div class="quick-links">
-                    <a href="#" class="text-light text-decoration-none me-3">About</a>
-                    <a href="#" class="text-light text-decoration-none me-3">Terms</a>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/tripshapersarabia/" target="_blank" class="text-light me-3">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61572405011237" target="_blank" class="text-light">
+                        <i class="fab fa-facebook"></i>
+                    </a>
                 </div>
             </div>
         </div>
